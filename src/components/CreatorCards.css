@@ -1,0 +1,43 @@
+.creator-cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100vw;
+}
+
+.creator-cards-player-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    width: 90vw;
+}
+
+.creator-cards-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow-x: scroll;
+    justify-content: space-between;
+}
+
+/* .creator-cards-menu-container {
+    display: flex;
+    justify-content: ;
+    align-items: center;
+    padding: 20px;
+    width: 90vw;
+} */
+
+.creator-cards-add-creator:hover {
+    background-color: #80DEEA;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+}

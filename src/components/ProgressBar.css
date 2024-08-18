@@ -1,0 +1,25 @@
+.progress-container {
+    position: relative;
+    width: 220px;
+    height: 24px;
+    background-color: rgb(227 225 225);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: #b6b5b5;
+    width: 0;
+    border-radius: 12px;
+}
+
+.cat-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}

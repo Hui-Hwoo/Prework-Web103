@@ -1,0 +1,85 @@
+.creator-card-container {
+    width: 280px;
+    height: 360px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 0 10px transparent;
+}
+
+.creator-card-container:hover {
+    box-shadow: 0 0 10px #f8f8f8;
+}
+
+.creator-card-link {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    width: 30px;
+    height: 30px;
+}
+
+.creator-card-link:hover {
+    background-color: #80deea;
+    border-radius: 50%;
+}
+
+.creator-card-avatar {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    padding: 30px 0px 15px 0px;
+    border-radius: 10px;
+}
+
+.creator-card-hover-area {
+    .creator-card-info-container {
+        display: flex;
+    }
+    .creator-card-play-btn {
+        display: none;
+    }
+}
+
+.creator-card-hover-area:hover {
+    .creator-card-info-container {
+        display: none;
+    }
+    .creator-card-play-btn {
+        display: flex;
+    }
+}
+
+.creator-card-info-container {
+    padding-top: 10px;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-card-name {
+    text-align: center;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+
+.creator-card-desp {
+    text-align: center;
+    font-size: 1em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Add ellipsis (...) at the end of the text */
+    width: 220px;
+}
+
+.creator-card-play-btn {
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 24px;
+}

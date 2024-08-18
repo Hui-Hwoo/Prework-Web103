@@ -1,24 +1,32 @@
-import React from "react";
-import logo from "./logo.svg";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { ViewCreator } from "./pages";
+import { useSupabaseCreater } from "./utils";
+import { CreatorCards } from "./components";
 import "./App.css";
 
 function App() {
+    const { creators, addCreator, deleteCreator } = useSupabaseCreater();
+
     return (
         <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
+            <BrowserRouter>
+                <Routes>
+                    <Route
+                        path="/"
+                        element={
+                            <div>
+                                <CreatorCards
+                                    creators={creators}
+                                    addCreator={addCreator}
+                                    deleteCreator={deleteCreator}
+                                />
+                            </div>
+                        }
+                    />
+                    <Route path="/creators/:id" element={<ViewCreator />} />
+                    <Route path="*" element={<Navigate to="/" />} />
+                </Routes>
+            </BrowserRouter>
         </div>
     );
 }

@@ -1,0 +1,57 @@
+.circle-avatar-container {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
+.circle-avatar {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 65px;
+}
+
+.circle-avatar-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.circle-avatar-text {
+    position: absolute;
+    left: 40px;
+    width: 100%;
+    height: 100%;
+    transition: transform 10s ease; /* Adjust the duration and easing as needed */
+    animation: rotateText 10s linear infinite;
+}
+
+.circle-avatar-text.paused {
+    animation-play-state: paused;
+    transform: rotate(360deg); /* Ensure it smoothly transitions to 360deg */
+}
+
+@keyframes rotateText {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.circle-avatar-text span {
+    position: absolute;
+    left: 50%;
+    font-size: 1.2em;
+    transform-origin: 0 100px;
+}
