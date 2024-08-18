@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+# WEB103 Prework - CreatorPlayer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Submitted by: Hui Hwoo
 
-## Available Scripts
+About this web app: This web app is a content creator directory that allows users to view, add, and delete content creators.
 
-In the project directory, you can run:
+Time spent: 20 hours
 
-### `npm start`
+## Required Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The following **required** functionality is completed:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+-   [x] A logical component structure in React is used to create the frontend of the app
+-   [x] At least five content creators are displayed on the homepage of the app
+-   [x] Each content creator item includes their name, a link to their channel/page, and a short description of their content
+-   [x] API calls use the async/await design pattern via Axios or fetch()
+-   [x] Clicking on a content creator item takes the user to their details page, which includes their name, url, and description
+-   [x] Each content creator has their own unique URL
+-   [x] The user can edit a content creator to change their name, url, or description
+-   [x] The user can delete a content creator
+-   [x] The user can add a new content creator by entering a name, url, or description and then it is displayed on the homepage
 
-### `npm test`
+The following **optional** features are implemented:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   [ ] Picocss is used to style HTML elements
+-   [x] The content creator items are displayed in a creative format, like cards instead of a list
+-   [x] An image of each content creator is shown on their content creator card
 
-### `npm run build`
+The following **additional** features are implemented:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   [ ] List anything else that you added to improve the site's functionality!
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Video Walkthrough
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### View All Content Creators
 
-### `npm run eject`
+<img src='data/CreatorView.gif' title='View All Content Creators' width='' alt='View All Content Creators' />
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### Check Individual Content Creator Details
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<img src='data/CreatorPage.gif' title='Check Individual Content Creator Details' width='' alt='Check Individual Content Creator Details' />
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### Add New Content Creator
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+<img src='data/Add Creator.gif' title='Add New Content Creator' width='' alt='Add New Content Creator' />
 
-## Learn More
+## Notes
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+When I was working on the project, I encountered a few challenges. One of the challenges was setting up the routing for the individual content creator pages. I had to figure out how to pass the content creator's ID to the URL so that I could fetch the correct content creator's information. Another challenge was setting up the form to add a new content creator. I had to figure out how to pass the form data to the backend and then display the new content creator on the homepage. Overall, I learned a lot about React and how to create a full-stack web app.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## License
+
+Copyright [2024] [Joe Hu]
+
+Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
+
+> http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.
